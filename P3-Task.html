@@ -3,54 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NBA FINALS</title>
-
+    <title>NBA LIVE SCORE TABLE</title>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="P3-Style.css">
-    <link rel="stylesheet" href="bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap.css">
-
-
+    
 </head>
 
-<body>
-    <header>
-        <h1>NBA LIVE SCORE TABLE</h1>
-        <p>by Albert Delez</p>
+<body class="bg-light">
+    <header class="bg-primary text-white text-center py-4">
+        <div class="container">
+            <h1 class="fw-bold">NBA LIVE SCORE TABLE</h1>
+            <p class="mb-0">by Albert Delez</p>
+        </div>
     </header>
-    <div class="container">
-        <nav>
-            <ul>
-                <li><button class="nav-link"><a href="#">Home</a></button></li>
-                <li><button class="nav-link"><a href="#">Teams</a></button></li>
-                <li><button class="nav-link"><a href="#">Schedule</a></button></li>
-                <li><button class="nav-link"><a href="#">Standings</a></button></li>
-            </ul>
-        </nav>
-            
 
-        <main>
-            <div class="Images">
-                <img class="spurs-image" src="https://cdn.nba.com/teams/uploads/sites/1610612759/2025/08/logo-2.jpg.jpeg?im=AspectCrop=(3,4),xPosition=0.5,yPosition=0.5;Resize=(640)" alt="Spurs Image">
-                <img class="knicks-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0lgY60WkUHSRSqCT48gMnzAmfI3AXw-PYH-Bx0NdVhJQjEK9C3LV3AiOR&s=10" alt="Knicks Image">
-            </div>
-            <div class="score">
-                <h2>Game 1</h2>
-                <p>San Antonio Spurs 95 - 105 New York Knicks</p>
-                <h2>Game 2</h2>
-                <p>San Antonio Spurs 104 - 105 New York Knicks</p>
-            </div>
-        </main>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
 
-    </div>  
-    
-    <footer>
-        <h2>Visit Our Sites</h2>
-            <ul>
-                <li><button class="nav-link"><a href="#">Facebook</a></button></li>
-                <li><button class="nav-link"><a href="#">Twitter</a></button></li>
-                <li><button class="nav-link"><a href="#">Instagram</a></button></li>
-                <li><button class="nav-link"><a href="#">YouTube</a></button></li>
-            </ul>
+            <a class="navbar-brand" href="#">NBA</a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Teams</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Schedule</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Standings</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <main class="container my-5">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+
+                <div class="row g-3">
+
+                    <div class="col-6">
+                        <img
+                            src="https://cdn.nba.com/teams/uploads/sites/1610612759/2025/08/logo-2.jpg.jpeg?im=AspectCrop=(3,4),xPosition=0.5,yPosition=0.5;Resize=(640)"
+                            class="img-fluid rounded shadow"
+                            alt="Spurs">
+                    </div>
+
+                    <div class="col-6">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0lgY60WkUHSRSqCT48gMnzAmfI3AXw-PYH-Bx0NdVhJQjEK9C3LV3AiOR&s=10"
+                            class="img-fluid rounded shadow"
+                            alt="Knicks">
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-lg-6 mt-4 mt-lg-0">
+
+                <div class="card shadow">
+
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="mb-0">NBA Finals</h3>
+                    </div>
+
+                    <div class="card-body">
+
+                        <h4>Game 1</h4>
+                        <p>San Antonio Spurs <strong>95</strong> - <strong>105</strong> New York Knicks</p>
+
+                        <hr>
+
+                        <h4>Game 2</h4>
+                        <p>San Antonio Spurs <strong>104</strong> - <strong>105</strong> New York Knicks</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+    <footer class="bg-dark text-white py-4">
+
+        <div class="container text-center">
+
+            <h4>Visit Our Sites</h4>
+
+            <div class="d-flex justify-content-center flex-wrap gap-2 mt-3">
+
+                <a href="#" class="btn btn-outline-light">Facebook</a>
+
+                <a href="#" class="btn btn-outline-light">Twitter</a>
+
+                <a href="#" class="btn btn-outline-light">Instagram</a>
+
+                <a href="#" class="btn btn-outline-light">YouTube</a>
+
+            </div>
+
+        </div>
+
     </footer>
+    <script src="bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
